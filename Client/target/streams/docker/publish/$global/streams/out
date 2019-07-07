@@ -1,0 +1,26 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting docker push dbeck6/client:v1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0mThe push refers to repository [docker.io/dbeck6/client][0m
+[0m[[0m[0minfo[0m] [0m[0m8ce4209dc409: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m58b13c7d3403: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m51566e3f832b: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m51774d97c868: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0mea20c4bf3aae: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m2c8d31157b81: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m7b76d801397d: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0mf32868cde90b: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m0db06dff9d9a: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m2c8d31157b81: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m7b76d801397d: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0mf32868cde90b: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m0db06dff9d9a: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m58b13c7d3403: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0m51566e3f832b: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0m51774d97c868: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0mea20c4bf3aae: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0m2c8d31157b81: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0m7b76d801397d: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0mf32868cde90b: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0m0db06dff9d9a: Mounted from dbeck6/reduceserver[0m
+[0m[[0m[0minfo[0m] [0m[0m8ce4209dc409: Pushed[0m
+[0m[[0m[0minfo[0m] [0m[0mv1.0.0: digest: sha256:128a0f3299480c519348befedff94d8b06f82a631ce1193286e9e2dc9e22325d size: 2214[0m
+[0m[[0m[0minfo[0m] [0m[0mPublished image dbeck6/client:v1.0.0[0m

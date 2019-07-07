@@ -1,0 +1,43 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: appka
+  name: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: appka
+  template:
+    metadata:
+      labels:
+        app: appka
+        actorSystemName: appka
+    spec:
+      containers:
+      - name: appka
+        image: dbeck6/client:v1.0.0
+        imagePullPolicy: Always 
+        env:
+        - name: HOST_NAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: status.podIP
+        livenessProbe:
+          tcpSocket:
+            port: 8558
+        ports:
+        # akka remoting
+        - name: remoting
+          containerPort: 2552
+          protocol: TCP
+        # akka-management bootstrap
+        - name: bootstrap
+          containerPort: 8558
+          protocol: TCP
+        # external http
+        - name: akka-mgmt-http
+          containerPort: 8558
+          protocol: TCP

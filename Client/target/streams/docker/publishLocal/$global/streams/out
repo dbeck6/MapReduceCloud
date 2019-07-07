@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t dbeck6/client:v1.0.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory C:\Users\David\Documents\CSC536\FinalProject_DavidBeck\Client\target\docker\stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  34.32MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/7 : FROM openjdk:8-jdk[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b84359d0cbce[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/7 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f41e89201d93[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/7 : ADD --chown=daemon:daemon opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 9633ed17d1fc[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/7 : USER daemon[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 97fbc2e554e3[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 97fbc2e554e3[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 9103d56d2262[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/7 : ENTRYPOINT bin/csc536-final-project -Dakka.remote.netty.tcp.hostname="$(eval "echo $AKKA_REMOTING_BIND_HOST")" -Dakka.management.http.hostname="$(eval "echo $AKKA_REMOTING_BIND_HOST")"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 3c3db2e16ac3[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 3c3db2e16ac3[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 1707a05cd2a1[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/7 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 2ced0f3eca6f[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 2ced0f3eca6f[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> e38f7a1653fe[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/7 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 6e9380eb7a11[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 6e9380eb7a11[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c4eac35ac913[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built c4eac35ac913[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged dbeck6/client:v1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0mSECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image dbeck6/client:v1.0.0[0m

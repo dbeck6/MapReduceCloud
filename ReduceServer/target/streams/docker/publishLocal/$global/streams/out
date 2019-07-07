@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t dbeck6/reduceserver:v1.0.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory C:\Users\David\Documents\CSC536\FinalProject_DavidBeck\ReduceServer\target\docker\stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  34.32MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/7 : FROM openjdk:8-jdk[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b84359d0cbce[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/7 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f41e89201d93[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/7 : ADD --chown=daemon:daemon opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> fe595b790f30[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/7 : USER daemon[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in b673c3e68b54[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container b673c3e68b54[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 5b0838090fb7[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/7 : ENTRYPOINT bin/csc536-final-project -Dakka.remote.netty.tcp.hostname="$(eval "echo $AKKA_REMOTING_BIND_HOST")" -Dakka.management.http.hostname="$(eval "echo $AKKA_REMOTING_BIND_HOST")"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 3315118f3a90[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 3315118f3a90[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> a76801b43952[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/7 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 743e21b3d375[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 743e21b3d375[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d0cccfc4b085[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/7 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 68deae9b3c39[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 68deae9b3c39[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 9d2584dc94bd[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built 9d2584dc94bd[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged dbeck6/reduceserver:v1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0mSECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image dbeck6/reduceserver:v1.0.0[0m

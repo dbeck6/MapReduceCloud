@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t dbeck6/mapserver:v1.0.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory C:\Users\David\Documents\CSC536\FinalProject_DavidBeck\MapServer\target\docker\stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  34.32MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/7 : FROM openjdk:8-jdk[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b84359d0cbce[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/7 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f41e89201d93[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/7 : ADD --chown=daemon:daemon opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 417519044821[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/7 : USER daemon[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> e18958431d6f[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/7 : ENTRYPOINT bin/csc536-final-project -Dakka.remote.netty.tcp.hostname="$(eval "echo $AKKA_REMOTING_BIND_HOST")" -Dakka.management.http.hostname="$(eval "echo $AKKA_REMOTING_BIND_HOST")"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c0076e0ccc9d[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/7 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 77df1642a914[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/7 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d9aa35b21b5e[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built d9aa35b21b5e[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged dbeck6/mapserver:v1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0mSECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image dbeck6/mapserver:v1.0.0[0m
